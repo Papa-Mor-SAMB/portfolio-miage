@@ -1,4 +1,6 @@
 import { motion } from "framer-motion";
+import { Award, ExternalLink, GraduationCap } from "lucide-react";
+import { certifications } from "../data/certifications";
 import { education } from "../data/education";
 
 export function Education() {
@@ -18,34 +20,81 @@ export function Education() {
           Formation
         </h2>
 
-        <ol className="mt-12 border-l border-black/10 dark:border-white/10">
-          {education.map((item, i) => (
-            <motion.li
-              key={item.id}
-              initial={{ opacity: 0, x: -12 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true, amount: 0.4 }}
-              transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="relative pb-10 pl-8 last:pb-0"
+        <div className="mt-10 grid gap-6 lg:grid-cols-2">
+          <motion.div
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.5 }}
+            className="rounded-2xl border border-black/8 bg-paper p-5 dark:border-white/8 dark:bg-ink sm:p-6"
+          >
+            <div className="flex items-center gap-2.5">
+              <GraduationCap size={20} className="text-gold" />
+              <h3 className="font-display text-lg font-medium">Formation</h3>
+            </div>
+
+            <div className="mt-6 flex flex-col gap-6">
+              {education.map((item) => (
+                <div key={item.id}>
+                  <p className="font-display text-base font-semibold">
+                    {item.startDate === item.endDate ? item.startDate : `${item.startDate} - ${item.endDate}`}
+                  </p>
+                  <p className="mt-1 font-medium">{item.degree}</p>
+                  <p className="text-sm text-text-light/60 dark:text-text-dark/60">
+                    {item.institution}
+                  </p>
+                  {item.description && (
+                    <p className="mt-1 text-sm text-text-light/60 dark:text-text-dark/60">
+                      {item.description}
+                    </p>
+                  )}
+                </div>
+              ))}
+            </div>
+          </motion.div>
+
+          {certifications.length > 0 && (
+            <motion.div
+              initial={{ opacity: 0, y: 16 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              className="rounded-2xl border border-black/8 bg-paper p-5 dark:border-white/8 dark:bg-ink sm:p-6"
             >
-              <span className="absolute -left-[5px] top-1.5 h-2.5 w-2.5 rounded-full bg-gold" />
-              <p className="font-mono text-xs text-text-light/60 dark:text-text-dark/60">
-                {item.startDate === item.endDate ? item.startDate : `${item.startDate} — ${item.endDate}`}
-              </p>
-              <h3 className="mt-1 font-display text-lg font-medium">
-                {item.degree}
-              </h3>
-              <p className="text-sm text-text-light/70 dark:text-text-dark/70">
-                {item.institution}
-              </p>
-              {item.description && (
-                <p className="mt-2 text-sm text-text-light/70 dark:text-text-dark/70">
-                  {item.description}
-                </p>
-              )}
-            </motion.li>
-          ))}
-        </ol>
+              <div className="flex items-center gap-2.5">
+                <Award size={20} className="text-gold" />
+                <h3 className="font-display text-lg font-medium">Certifications</h3>
+              </div>
+
+              <div className="mt-6 flex flex-col gap-5">
+                {certifications.map((cert) => (
+                  <div key={cert.id}>
+                    <p className="font-medium">{cert.name}</p>
+                    {cert.issuer && (
+                      <p className="text-sm text-text-light/60 dark:text-text-dark/60">
+                        {cert.issuer}
+                      </p>
+                    )}
+                    <p className="mt-0.5 font-mono text-xs text-text-light/50 dark:text-text-dark/50">
+                      {cert.date}
+                    </p>
+                    {cert.url && (
+                      <a
+                        href={cert.url}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="mt-1 inline-flex items-center gap-1.5 text-sm font-medium text-text-light hover:text-gold dark:text-text-dark"
+                      >
+                        Voir le certificat
+                        <ExternalLink size={14} />
+                      </a>
+                    )}
+                  </div>
+                ))}
+              </div>
+            </motion.div>
+          )}
+        </div>
       </div>
     </section>
   );
