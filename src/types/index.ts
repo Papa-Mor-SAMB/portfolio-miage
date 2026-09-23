@@ -44,3 +44,11 @@ export interface EducationItem {
   endDate: string;
   description?: string;
 }
+
+export interface CertificationItem {
+  id: string;
+  name: string;
+  issuer?: string;
+  date: string;
+  url?: string | null; // lien vers le certificat/badge, si disponible
+}
