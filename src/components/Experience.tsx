@@ -44,7 +44,7 @@ function ExperienceCard({ exp, index }: { exp: ExperienceItem; index: number }) 
           <CompanyLogo company={exp.company} logo={exp.logo} />
           <div>
             <h4 className="font-display text-lg font-medium">
-              {exp.role} — {exp.company}
+              {exp.role} - {exp.company}
             </h4>
             {exp.location && (
               <p className="mt-1 flex items-center gap-1.5 text-sm text-text-light/60 dark:text-text-dark/60">
@@ -55,7 +55,7 @@ function ExperienceCard({ exp, index }: { exp: ExperienceItem; index: number }) 
           </div>
         </div>
         <span className="font-mono text-xs text-text-light/60 dark:text-text-dark/60">
-          {exp.startDate} — {exp.endDate}
+          {exp.startDate} - {exp.endDate}
         </span>
       </div>
       {exp.missions.length > 0 && (

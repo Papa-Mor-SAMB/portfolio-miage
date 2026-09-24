@@ -3,7 +3,7 @@ import type { Project } from "../types";
 export const projects: Project[] = [
     {
     id: "app-rh-recrutement-onboarding",
-    name: "Application RH – Recrutement et Onboarding",
+    name: "Application RH - Recrutement et Onboarding",
     date: "Oct. 2025 – Jan. 2026",
     description:
       "Application Java Spring Boot pour la gestion du recrutement et de l'onboarding, réalisée dans le cadre d'un projet académique à l'Université Haute-Alsace.",
@@ -43,7 +43,7 @@ export const projects: Project[] = [
 },
   {
     id: "api-restful-echange-electricite",
-    name: "API RESTful – Échange d'électricité",
+    name: "API RESTful - Échange d'électricité",
     date: "2025",
     description:
       "Conception et développement d'un site web pour l'échange d'électricité, avec une API RESTful et une interface utilisateur en Tailwind.",
@@ -95,7 +95,7 @@ export const projects: Project[] = [
   
   {
     id: "reporting-data-visualization-covid",
-    name: "Reporting & data visualization – Covid-19",
+    name: "Reporting & data visualization - Covid-19",
     date : "2021",
     description:
       "Projet de reporting sur Tableau Desktop portant sur l'étude des données statistiques du Covid-19.",

@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 
 const points = [
-  "Master 2 MIAGE — développement logiciel et systèmes d'information",
+  "Master 2 MIAGE - développement logiciel et systèmes d'information",
   "Développement web full-stack (Java, JavaScript/TypeScript, Spring Boot, React, Node.js)",
   "Conception et manipulation de bases de données relationnelles",
   "Notions en cybersécurité et sécurité applicative",
