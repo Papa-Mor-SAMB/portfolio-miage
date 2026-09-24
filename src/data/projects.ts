@@ -1,6 +1,24 @@
 import type { Project } from "../types";
 
 export const projects: Project[] = [
+    {
+    id: "app-rh-recrutement-onboarding",
+    name: "Application RH – Recrutement et Onboarding",
+    date: "Oct. 2025 – Jan. 2026",
+    description:
+      "Application Java Spring Boot pour la gestion du recrutement et de l'onboarding, réalisée dans le cadre d'un projet académique à l'Université Haute-Alsace.",
+    problem:
+      "Centraliser la gestion des offres et candidatures avec des rôles utilisateurs distincts (admin, RH, candidat) et un accès sécurisé.",
+    technologies: ["Java", "Spring Boot", "Spring Security"],
+    features: [
+      "CRUD offres/candidatures",
+      "Rôles utilisateur (admin, RH, candidat)",
+      "Authentification et sécurité avec Spring Security",
+    ],
+    githubUrl: null, // À compléter si le repo est disponible
+    demoUrl: null,
+    image: null,
+  },
   {
   id: "filtre-dns-securite",
   name: "Filtre DNS de sécurité",
