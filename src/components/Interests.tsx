@@ -9,6 +9,7 @@ import {
   Plane,
   Sparkles,
   Trophy,
+  Wrench,
   type LucideIcon,
 } from "lucide-react";
 import { interests } from "../data/interests";

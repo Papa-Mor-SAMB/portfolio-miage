@@ -11,4 +11,5 @@ export const interests: Interest[] = [
   { name: "Voyage", icon: "Sparkles" },
   { name: "Veille technologique", icon: "Sparkles" },
   { name: "Documentation sur l'avancée de l'IA", icon: "Sparkles" },
+  { name: "Bricolage", icon: "Wrench" },
 ];
