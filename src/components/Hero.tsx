@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Download, Mail } from "lucide-react";
-import { GithubIcon, LinkedinIcon } from "./icons";
+import { GithubIcon, GitlabIcon, LinkedinIcon } from "./icons";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 18 },
@@ -51,7 +51,7 @@ export function Hero() {
             variants={fadeUp}
             className="mx-auto mt-6 max-w-xl text-lg text-text-light/75 dark:text-text-dark/75"
           >
-            Étudiant en Master 2 MIAGE (Méthodes Informatiques Appliquées à la Gestion des Entreprises) à l'Universisté de Haute-Alsace de Mulhouse.
+            Étudiant en Master 2 MIAGE (Méthodes Informatiques Appliquées à la Gestion des Entreprises) à l'Universisté Haute-Alsace de Mulhouse.
           </motion.p>
 
           <motion.div
@@ -119,6 +119,15 @@ export function Hero() {
               className="rounded-full p-2 text-text-light/60 transition-colors hover:bg-black/5 hover:text-text-light dark:text-text-dark/60 dark:hover:bg-white/5 dark:hover:text-text-dark"
             >
               <LinkedinIcon size={20} />
+            </a>
+            <a
+              href="https://gitlab.com/papemor2711"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Profil GitLab"
+              className="rounded-full p-2 text-text-light/60 transition-colors hover:bg-black/5 hover:text-text-light dark:text-text-dark/60 dark:hover:bg-white/5 dark:hover:text-text-dark"
+            >
+              <GitlabIcon size={20} />
             </a>
           </motion.div>
         </div>
