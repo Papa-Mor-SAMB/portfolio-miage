@@ -24,6 +24,7 @@ const ICONS: Record<string, LucideIcon> = {
   Plane,
   Trophy,
   Sparkles,
+  Wrench,
 };
 
 const ACCENTS = [
