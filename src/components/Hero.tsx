@@ -51,7 +51,7 @@ export function Hero() {
             variants={fadeUp}
             className="mx-auto mt-6 max-w-xl text-lg text-text-light/75 dark:text-text-dark/75"
           >
-            Étudiant en Master 2 MIAGE (Méthodes Informatiques Appliquées à la Gestion des Entreprises) à l'Universisté Haute-Alsace de Mulhouse.
+            Étudiant en Master 2 MIAGE (Méthodes Informatiques Appliquées à la Gestion des Entreprises) à l'Universisté de Haute-Alsace de Mulhouse.
           </motion.p>
 
           <motion.div
