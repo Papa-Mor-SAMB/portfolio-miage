@@ -68,7 +68,7 @@ export const experiences: ExperienceItem[] = [
     missions: [],
     technologies: [],
   },
-  {
+  /*{
     id: "la-guinguette",
     type: "job-etudiant",
     company: "La Guinguette",
@@ -91,7 +91,7 @@ export const experiences: ExperienceItem[] = [
     endDate: "07/2025",
     missions: ["Cuisine", "Serveur", "Livreur", "Caissier"],
     technologies: [],
-  },
+  },*/
   {
     id: "mcdonalds",
     type: "job-etudiant",
