@@ -151,11 +151,8 @@ export function Experience() {
           transition={{ duration: 0.5 }}
           className="font-mono text-2xl text-gold"
         >
-          Expérience
+          Expériences professionnelles
         </motion.p>
-        <h2 className="mt-4 text-3xl font-semibold tracking-tight sm:text-4xl">
-          Stages &amp; expériences professionnelles
-        </h2>
 
         {experiences.length === 0 ? (
           <motion.div

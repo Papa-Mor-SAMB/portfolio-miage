@@ -56,6 +56,7 @@ export const skillCategories: SkillCategory[] = [
       { name: "Tableau", icon: "tableau", color: "E97627" },
       { name: "Talend", icon: "talend", color: "1E3A5F" },
       { name: "R", icon: "r", color: "276DC3" },
+      { name: "Excel", icon: "microsoftexcel", color: "217346" },
     ],
   },
   {

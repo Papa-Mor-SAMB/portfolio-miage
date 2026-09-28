@@ -119,9 +119,6 @@ export function Projects() {
         >
           Projets
         </motion.p>
-        <h2 className="mt-4 text-3xl font-semibold tracking-tight sm:text-4xl">
-          Réalisations
-        </h2>
 
         <div className="mt-12 flex flex-col gap-8">
           {projects.map((project, i) => (

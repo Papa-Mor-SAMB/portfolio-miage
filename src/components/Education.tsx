@@ -16,9 +16,6 @@ export function Education() {
         >
           Parcours
         </motion.p>
-        <h2 className="mt-4 text-3xl font-semibold tracking-tight sm:text-4xl">
-          Formation
-        </h2>
 
         <div className="mt-10 grid gap-6 lg:grid-cols-2">
           <motion.div

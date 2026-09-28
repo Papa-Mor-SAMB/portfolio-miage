@@ -45,7 +45,7 @@ export function About() {
               SQL et développement web, ainsi qu'en analyse et visualisation de
               données. J'aime comprendre comment les systèmes fonctionnent,
               résoudre des problèmes techniques et transformer une idée en
-              solution concrète — curieux, autonome et motivé, je cherche
+              solution concrète. Curieux, autonome et motivé, je cherche
               aujourd'hui une opportunité pour mettre ces compétences en
               pratique et continuer à progresser.
             </p>
