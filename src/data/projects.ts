@@ -2,6 +2,38 @@ import type { Project } from "../types";
 
 export const projects: Project[] = [
     {
+    id: "suivi-candidatures",
+    name: "Suivi de candidatures",
+    date: "2026",
+    description:
+      "Application web full-stack de suivi de candidatures, projet personnel : API REST Spring Boot sécurisée, interface React et base PostgreSQL, déployée en ligne.",
+    problem:
+      "Centraliser le suivi de mes candidatures de stage et d'emploi dans une application sécurisée, testée et accessible en ligne.",
+    technologies: [
+      "Java",
+      "Spring Boot",
+      "JWT",
+      "React",
+      "PostgreSQL",
+      "Docker",
+      "JUnit",
+      "Mockito",
+      "GitHub Actions",
+      "Render",
+      "Vercel",
+      "Neon",
+    ],
+    features: [
+      "API REST Spring Boot sécurisée : authentification JWT, hachage BCrypt, protection contre la force brute, en-têtes de sécurité HTTP",
+      "Interface React, base PostgreSQL, conteneurisation Docker",
+      "22 tests automatisés (JUnit, Mockito) et intégration continue avec GitHub Actions",
+      "Déployée en ligne (Render, Vercel, Neon)",
+    ],
+    githubUrl: "https://github.com/Papa-Mor-SAMB/suivi-candidatures", 
+    demoUrl: "https://suivi-de-candidatures.vercel.app/",
+    image: null,
+  },
+    {
     id: "app-rh-recrutement-onboarding",
     name: "Application RH - Recrutement et Onboarding",
     date: "Oct. 2025 – Jan. 2026",
@@ -15,7 +47,7 @@ export const projects: Project[] = [
       "Rôles utilisateur (admin, RH, candidat)",
       "Authentification et sécurité avec Spring Security",
     ],
-    githubUrl: null, // À compléter si le repo est disponible
+    githubUrl: null,
     demoUrl: null,
     image: null,
   },
